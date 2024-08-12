@@ -18,11 +18,10 @@
 .header {
   background-image: linear-gradient(
     180deg,
-    rgba(19, 18, 18, 0) 0%,
-    rgba(63, 61, 61, 0.686) 100%
+    rgb(9, 9, 9),
+    rgba(48, 48, 48, 0.88),
+    rgb(9, 9, 9)
   );
-  /* max-width: 100%;
-  height: auto; */
 }
 .navbar {
   max-width: 100%;
@@ -40,7 +39,7 @@
   color: crimson;
   font-family: Verdana, sans-serif;
   font-weight: 800;
-  font-size: 38px;
+  font-size: 2.5rem;
   font-style: italic;
 }
 
@@ -78,82 +77,93 @@
   border: none;
   cursor: pointer;
 }
-.main-banner-box {
+#menu-bar {
+  color: white;
+  font-size: 25px;
+  display: none;
 }
+/* .main-banner-box {
+} */
 .second-banner-box {
   max-width: 100%;
   height: auto;
-  gap: 110px;
+  gap: 125px;
   justify-content: center;
 }
 .banner-text-box {
-  width: 42%;
+  max-width: 42%;
   height: auto;
-  /* line-height: 1; */
+  /* border: 1px solid red; */
+  margin-right: 20px;
 }
 #banner-text {
-  width: 75%;
-  font-size: 60px;
+  font-size: 4rem;
   font-family: Verdana, sans-serif;
   font-weight: 800;
   color: white;
   margin-bottom: -8px;
-  line-height: .9;
+  line-height: 4rem;
 }
 #shape {
   font-family: MonteCarlo, cursive;
-  font-size: 120px;
-  font-weight: 300;
+  font-size: 7rem;
+  font-weight: 100;
 }
 #banner-text-description {
-  margin-top: 12px;
-  font-size: 16px;
+  margin-top: 40px;
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
   color: gray;
-  width: 500px;
-  margin-top: 40px;
+  line-height: 1.8rem;
 }
 
 #btn-join {
   width: 190px;
-  height: 44px;
+  height: 54px;
   border-radius: 41px;
   background-color: rgb(221, 10, 52);
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1rem;
   letter-spacing: 0px;
   text-align: center;
   padding: 10px 24px 10px 24px;
   border: none;
   margin-right: 12px;
+  margin-top: 30px;
   cursor: pointer;
+}
+#btn-join2 {
+  display: none;
 }
 #btn-download {
   width: 190px;
-  height: 44px;
+  height: 54px;
   background-color: rgb(19, 18, 18);
   border-radius: 41px;
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1rem;
   letter-spacing: 0px;
   text-align: center;
   padding: 10px 24px 10px 24px;
   border: 1px solid white;
   cursor: pointer;
+  margin-top: 30px;
 }
 .banner-img-box {
-  max-width: 40%;
-}
-.img {
+  max-width: 50%;
+  height: auto;
+  /* border: 1px solid blue; */
 }
 .banner-img-box img {
+  max-width: 100%;
+  height: 500px;
   position: relative;
   margin-left: 80px;
 }
@@ -162,8 +172,8 @@
   width: 180px;
   height: 90px;
   position: absolute;
-  bottom: 270px;
-  right: 440px;
+  bottom: 230px;
+  right: 380px;
   backdrop-filter: blur(10px);
   padding-left: 50px;
   box-sizing: border-box;
@@ -184,7 +194,7 @@
   /* background-color: rgb(43, 41, 41); */
 }
 .text-block2 h3 {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-family: verdana;
   line-height: 0.5px;
   font-weight: 800;
@@ -193,23 +203,23 @@
 .text-block2 p {
   color: rgba(129, 126, 126, 0.923);
   font-family: verdana;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: .5;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 0.5;
 }
 .text-circle {
   line-height: 0.5px;
   padding: 10px;
 }
 .text-circle h3 {
-  font-size: 26px;
+  font-size: 1.5rem;
   font-family: verdana;
   color: white;
   font-weight: 900;
 }
 .text-circle p {
-  font-size: 12px;
-  font-weight: 100;
+  font-size: 0.8rem;
+  font-weight: 400;
   font-family: verdana;
   color: rgba(129, 126, 126, 0.923);
 }
@@ -230,7 +240,7 @@
   border-radius: 10px;
 }
 /* Change Habits Section Styles */
-.main {
+/* .main {
   max-width: 100%;
   height: auto;
 }
@@ -245,87 +255,89 @@
 }
 .habits-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  font-weight: 800px;
+  font-size: 2.5rem;
+  font-weight: 800;
   text-align: center;
   color: white;
+  line-height: 1rem;
 }
 .habits-description-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  font-weight: 400px;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-align: center;
   color: rgba(129, 126, 126, 0.923);
+  line-height: 1.5rem;
 }
 .habits-img-box {
-  width: 80%;
+  width: 70%;
   height: auto;
-  gap: -10px;
+  gap: 2rem;
   justify-content: center;
   text-align: center;
   margin-top: 30px;
 }
 .habits-img {
-  width: 20%;
-  /* height: auto; */
+  width: 100%;
+  height: auto;
 }
 .habit-img-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 400px;
   color: white;
   margin: 10px auto;
 }
 .habits-img-description {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  font-weight: 400px;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-align: center;
   margin: 0 auto;
   color: rgba(134, 131, 131, 0.936);
 }
-.habits-img-box .habits-img img {
-  border-radius: 100px;
-  max-width: 80%;
-  height: 70%;
+.habits-img img {
+  width: 100%;
+  height: 220px;
+  border-radius: 140px;
   border: 4px solid rgba(31, 31, 31, 0.808);
-}
+} */
 /* Run & Extra Related Styles */
-.run-section {
+/* .run-section {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   align-items: center;
   justify-content: center;
   margin-top: 95px;
 }
 .run-container {
   max-width: 70%;
-  height: auto;
+  height: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   gap: 30px;
   background-color: rgb(33, 32, 32);
-  /* border: 1px solid green; */
+
 }
 .run-text-box {
-  max-width: 45%;
+  width: 50%;
   height: 70%;
-  margin-left: 40px;
+
 }
 .run-text {
-  width: 85%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 800;
   color: white;
 }
 .run-text-description {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  font-weight: 400px;
+  font-size: 0.8rem;
+  font-weight: 400;
   margin: 0 auto;
   color: rgba(134, 131, 131, 0.936);
+  line-height: 1.5rem;
 }
 .btn-join {
   width: 190px;
@@ -334,7 +346,7 @@
   background-color: rgb(221, 10, 52);
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0px;
@@ -347,23 +359,22 @@
   cursor: pointer;
 }
 .run-img-box {
-  max-width: 50%;
+  width: 40%;
   height: 70%;
-  /* margin-right: -50px; */
-  /* border: 2px solid indigo; */
 }
 .run-img-box img {
-  max-width: 75%;
-  height: 300px;
-  margin-left: 70px;
-  margin-right: 0px;
+  width: 100%;
+  height: 350px;
+  margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 20px;
   border-radius: 20px;
-}
+  object-fit: none;
+  object-position: 67% 34%;
+} */
 
 /* BMI Calculator Related Styles */
-.bmi-calculator-section {
+/* .bmi-calculator-section {
   margin-top: 45px;
 }
 .calculator-container {
@@ -373,7 +384,7 @@
   justify-content: center;
   align-items: center;
 }
-.bmi-text-box{
+.bmi-text-box {
   width: 40%;
 }
 .bmi-head-text {
@@ -381,17 +392,15 @@
   font-size: 40px;
   font-weight: 800;
   color: rgb(247, 244, 244);
-  line-height: .5;
+  line-height: 0.5;
 }
 .bmi-text-description {
-  /* width: 75%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(134, 131, 131, 0.936);
   margin-bottom: 60px;
   line-height: 2;
-
 }
 .calculator-input-box {
   width: 100%;
@@ -439,7 +448,6 @@ th {
 .calculate-form {
   width: 40%;
   height: auto;
-  /* border: 1px solid tomato; */
 }
 .bmi-form-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -469,11 +477,11 @@ label > input {
   margin: 5px 5px;
   background-color: rgba(54, 53, 53, 0.767);
   font-family: Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600;
   border: none;
 }
-label > select  {
+label > select {
   width: 45.5%;
   height: auto;
   padding: 12px 10px 12px 10px;
@@ -481,13 +489,14 @@ label > select  {
   margin: 5px 5px;
   background-color: rgba(54, 53, 53, 0.767);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600;
   border: none;
   color: rgba(134, 131, 131, 0.936);
+  border-right: 10px solid transparent;
 }
 
-form > select{
+form > select {
   width: 94%;
   height: auto;
   padding: 12px 10px 12px 10px;
@@ -496,9 +505,10 @@ form > select{
   background-color: rgba(54, 53, 53, 0.767);
   color: rgba(134, 131, 131, 0.936);
   font-family: Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600;
   border: none;
+  border-right: 10px solid transparent;
 }
 .btn-bmi {
   width: 190px;
@@ -507,7 +517,7 @@ form > select{
   background-color: rgb(221, 10, 52);
   color: rgb(255, 255, 255);
   font-family: Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0px;
@@ -518,28 +528,26 @@ form > select{
   margin-right: 12px;
   margin-bottom: 20px;
   cursor: pointer;
-}
+} */
 
 /* Trainer related styles */
-.team-section {
- 
+/* .team-section {
   margin-top: 40px;
 }
 .team-text-box {
 }
 .team-text {
   font-family: Verdana, sans-serif;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 800;
   color: white;
   text-align: center;
   align-items: center;
-  /* margin: 0 auto; */
-  line-height: .5;
+  line-height: 0.5;
 }
 .team-text-description {
   font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 400;
   margin: 40px auto;
   text-align: center;
@@ -553,56 +561,50 @@ form > select{
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* margin-top: 30px; */
- 
 }
 .team-img-box2 {
-  width: 70%;
-  height: 70%;
+  max-width: 72%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: rgb(33, 32, 32);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 40px;
-  gap: 24px;
+  gap: 20px;
 }
 .team-img {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 5px 5px 0 rgb(15, 15, 15);
+  height: 250px;
+  border-radius: 20px;
 }
 
 .trainer-box1 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.trainer-box2 {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: 250px;
   position: relative;
 }
 .trainer {
   position: absolute;
-  bottom: 0px;
-  left: 25px;
-  font-size: 16px;
+  bottom: 20px;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
   font-family: Verdana;
   color: rgb(236, 233, 233);
-  margin-left: 0px;
 }
-.trainer p {
-  font-size: 10px;
+.trainer-p {
+  position: absolute;
+  font-size: 0.8rem;
   font-family: Verdana;
   color: rgb(206, 201, 201);
   text-align: start;
-}
+  bottom: 0px;
+  margin-left: 1.5rem;
+} */
 
 /* Footer Section Related Styles */
 .footer-section {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-color: rgb(33, 32, 32);
 }
@@ -610,22 +612,24 @@ form > select{
   justify-content: center;
 }
 .footer-container {
-  width: 80%;
+  max-width: 80%;
   height: auto;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 .footer-box {
-  width: 40%;
+  max-width: 40%;
   height: auto;
   align-items: center;
+  margin-left: 25px;
+  /* border: 1px solid blue; */
 }
 .footer-text {
   text-align: start;
   color: crimson;
   font-family: Verdana, sans-serif;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 3.5rem;
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -633,40 +637,33 @@ form > select{
 }
 .footer-text-description {
   font-family: Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 400;
   margin-left: 20px;
   color: rgba(134, 131, 131, 0.936);
+  line-height: 1.5;
 }
 .footer-box2 {
-  width: 30%;
+  max-width: 30%;
   height: auto;
-  margin-left: 30px;
+  margin-left: 40px;
+  /* border: 1px solid red; */
 }
 .footer-box3 {
-  width: 30%;
+  max-width: 30%;
   height: auto;
-  margin-left: 30px;
+  margin-left: 40px;
+  /* border: 1px solid rebeccapurple; */
 }
 .footer-text2 {
   font-family: Verdana, sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 800;
   color: white;
-  margin-left: 110px;
+  margin-left: 108px;
   margin-top: 60px;
   margin-bottom: 0px;
 }
-/* .footer-text3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-  font-weight: 800;
-  color: white;
-  margin-left: 110px;
-  margin-top: 20px;
-  margin-bottom: 0px;
- 
-} */
 .footer-ul {
   text-decoration: none;
   text-align: start;
@@ -675,40 +672,114 @@ form > select{
 .footer-ul > li {
   list-style: none;
   font-family: Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   color: rgba(134, 131, 131, 0.936);
-  margin: 20px auto;
+  margin: 10px auto;
 }
-/* .footer-ul3 {
-  height: auto;
-  text-decoration: none;
-  text-align: start;
-  margin-left: 70px;
-  border: 2px solid red;
-}
-.footer-ul3 li{
-  list-style: none;
-  font-family: Verdana, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: rgba(134, 131, 131, 0.936);
-border-bottom: 1px solid tomato;
-gap: 10px auto;
-  
-} */
-.copy-right {
-  border-top: 2px solid rgba(61, 59, 59, 0.874);
+hr {
   width: 75%;
+  border: 1px solid rgba(61, 59, 59, 0.874);
+}
+.copy-right {
+  height: 50px;
   text-align: center;
-  margin-left: 160px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
   font-family: Verdana;
   color: rgba(134, 131, 131, 0.936);
+  margin-top: 25px;
 }
 
 /* Mobile Device View Style */
 @media screen and (max-width: 576px) {
+  /* Navbar and banner section Responsive */
+  .navbar,
+  .menu {
+    width: 95%;
+    height: 60px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .text-link {
+    display: none;
+  }
+  #menu-bar {
+    display: block;
+  }
+  .second-banner-box {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .banner-text-box {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1.3rem;
+  }
+  #banner-text {
+    font-size: 2.6rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+  }
+  #shape {
+    font-size: 5.5rem;
+  }
+  #banner-text-description {
+    max-width: 80%;
+    margin-top: 25px;
+  }
+  .common-btn {
+    border: 1px solid red;
+    justify-content: center;
+    gap: 10px;
+
+  }
+  #btn-download {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  #btn-join {
+    display: none;
+  }
+  #btn-join2 {
+    display: block;
+    width: 190px;
+    height: 54px;
+    border-radius: 41px;
+    background-color: rgb(221, 10, 52);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 10px 24px 10px 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .banner-img-box {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1.3rem;
+  }
+  .banner-img-box img {
+    position: relative;
+  }
+  .second-banner-box {
+    gap: 40px;
+  }
+  .banner-img-box img {
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 50px;
+    right: 280px;
+  }
+  .text-block2 {
+    position: absolute;
+    top: 465px;
+    right: 100px;
+  }
 }
